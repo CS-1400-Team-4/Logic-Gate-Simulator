@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="GatesTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-09-24T01:26:55" hostname="AMETHYST" time="0.01">
+<testsuite name="GatesTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-09-27T22:44:29" hostname="AMETHYST" time="0.012">
   <properties/>
-  <testcase name="andGate()" classname="GatesTest" time="0.009"/>
+  <testcase name="testAndGate()" classname="GatesTest" time="0.011"/>
   <testcase name="testNotGate()" classname="GatesTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
