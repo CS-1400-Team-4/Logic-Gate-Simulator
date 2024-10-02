@@ -3,7 +3,8 @@ import java.util.Set;
 
 import javax.swing.JOptionPane;
 
-public class LogicGateMain {
+public class LogicGateMain 
+{
 
     public static void main(String[] args) 
     {
@@ -13,6 +14,8 @@ public class LogicGateMain {
     	DisplayGateOutput gateOutputDisplay;
         String input = JOptionPane.showInputDialog("Enter a boolean expression");
         String restart="";
+        HashMap<String, Boolean> userInput;
+        boolean result;
         
         userDisplay = new WindowInput(input);
         userDisplay.displayWindow();
@@ -32,12 +35,18 @@ public class LogicGateMain {
 	        
 			gateInputDisplay = new DisplayGateInput(input, userDisplay.getInputValues());//passing user input variable like (AB) and values (01)
 			gateInputDisplay.displayGate();
+			
+			
+			userInput = userDisplay.getInputValues(); //store HashMap values from user String:Boolean 
+			result = yourCode; 
+			
+			
 			//loops until user clicks Next button
 			while(!gateInputDisplay.getStatus()) 
 	        {
 	        	System.out.println("");
 	        }
-			gateOutputDisplay = new DisplayGateOutput(gateInputDisplay.getGateName(), true); //passing gate name and boolean value
+			gateOutputDisplay = new DisplayGateOutput(gateInputDisplay.getGateName(), result); //passing gate name and boolean value
 	        gateOutputDisplay.displayOR();
 	        //loops until button is clicked or closes the window
 	        while(!gateOutputDisplay.getStatus()) 
