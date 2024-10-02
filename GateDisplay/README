@@ -1,0 +1,3 @@
+line 40 stores HashMap values <String, Boolean>
+line 41 need your code to return a Boolean result.
+thee result gets passed into line 49 to be displayed.
